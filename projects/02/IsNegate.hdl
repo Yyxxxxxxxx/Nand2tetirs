@@ -1,0 +1,11 @@
+/**
+ * judge a 16-bits value is negate or not
+ */
+
+CHIP IsNegate{
+    IN in[16];
+    OUT out;
+
+    PARTS:
+    And(a = in[15], b = true, out = out);
+}
